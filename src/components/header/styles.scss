@@ -1,0 +1,81 @@
+.HeaderWrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: #fff;
+
+  > a {
+    padding-left: 15px;
+    img{width: 52px;}
+  }
+  button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  nav{
+    position: relative;
+    .MenuMobileClose{
+      position: absolute;
+      background-color: #fff;
+      right: 0;
+      width: 200px;
+      overflow: hidden;
+      height: calc(100vh - 70px);
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        transition: 0.5s;
+        li{
+          margin: 10px 0;
+          display: block;
+          a{
+            color: #252160;
+            display: block;
+            border-bottom: 2px solid #252160;
+            text-decoration: none; 
+          }
+          &:hover{
+            background: rgb(231, 231, 231);
+          }
+        }
+      }
+    }
+    .MenuMobile{
+      position: absolute;
+      background-color: #fff;
+      right: 0;
+      width: 0;
+      overflow: hidden;
+      height: calc(100vh - 70px);
+      transition: 0.5s;
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        li{
+          margin: 10px 0;
+          display: block;
+          a{
+            color: #252160;
+            display: block;
+            border-bottom: 2px solid #252160;
+            text-decoration: none; 
+          }
+          &:hover{
+            background: rgb(231, 231, 231);
+          }
+        }
+      }
+    }
+  }
+}

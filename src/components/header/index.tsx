@@ -1,6 +1,6 @@
 import logo from '../../assets/logoMobile.svg';
 import './styles.scss';
-import { MdClose, MdMenu } from 'react-icons/md'
+import { MdClose, MdMenu } from 'react-icons/md';
 import { useState } from 'react';
 
 export function Header() {
@@ -19,27 +19,16 @@ export function Header() {
             <MdClose size="30px" color="#252160" />
           }
         </button>
-        {openMenu != true ?
-          <div className="MenuMobile">
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Quem somos</a></li>
-              <li><a href="">Planos</a></li>
-              <li><a href="">Fale conosco</a></li>
-              <li><a href="">Entrar</a></li>
-            </ul>
-          </div>
-          :
-          <div className="MenuMobileClose">
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Quem somos</a></li>
-              <li><a href="">Planos</a></li>
-              <li><a href="">Fale conosco</a></li>
-              <li><a href="">Entrar</a></li>
-            </ul>
-          </div>
-        }
+
+        <div className={`${openMenu != true ? "MenuMobile" : "MenuMobileClose"}`}>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Quem somos</a></li>
+            <li><a href="">Planos</a></li>
+            <li><a href="">Fale conosco</a></li>
+            <li><a href="">Entrar</a></li>
+          </ul>
+        </div>
       </nav>
     </header >
   )

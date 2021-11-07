@@ -13,7 +13,7 @@ export function FirstSection() {
           com materiais desenvolvido por <strong>mestres e doutores
             em matemática</strong></p>
       </div>
-      <BtnCTAGreen frase="Veja nossos planos" BgColor="3affe5" />
+      <BtnCTAGreen frase="Veja nossos planos" BgColor="3affe5" TextColor="252160" />
     </div>
   )
 }

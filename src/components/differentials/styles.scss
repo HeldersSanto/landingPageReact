@@ -1,0 +1,46 @@
+.DifferentialsWrapper{
+  text-align: center;
+  margin-bottom: 70px;
+  .DifferentialsSingle{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 253px;
+    
+    .ImgBorder{
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      border: 2px solid #26e9cf;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 30px;
+      }
+    }
+  .DifferentialsText{
+    h4{
+      color: #252160;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      margin: 10px auto;
+    }
+    p{
+      margin: 0 auto;
+      color: #7b7b7b;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+    }
+  }
+  }
+  .LastDiv{
+    margin-bottom: 70px;
+  }
+}

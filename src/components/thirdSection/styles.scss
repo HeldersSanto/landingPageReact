@@ -1,0 +1,32 @@
+.ThirdSection{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  .SectionContentAlign{margin-top: 70px;}
+  .SectionContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      position: relative;
+      top: 0;
+      margin: 25px auto;
+      max-width: 450px;
+      width: 100%;
+      animation: moveAnimate 3s linear infinite alternate;
+    }
+  }
+}
+
+@keyframes moveAnimate {
+  from{
+    top: -10px;
+  }
+  to{
+    top: 10px;
+  }
+}

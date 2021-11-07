@@ -1,0 +1,25 @@
+.Slider{
+  margin: 20px auto 50px;
+  padding: 0 2%;
+}
+.CaroselDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 4);
+  height: 100px;
+  img{
+    width: 60%;
+  }
+}
+
+@media(max-width: 768px){
+  div.CaroselDiv{
+    width: calc(100% / 3);
+  }
+}
+@media(max-width: 480px){
+  div.CaroselDiv{
+    width: calc(100% / 2);
+  }
+}

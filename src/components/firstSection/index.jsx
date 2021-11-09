@@ -1,19 +1,23 @@
 import { BtnCTAGreen } from '../btnCTA';
-import styles from './styles.module.scss';
+import styles from './styles.scss';
 import iconTop from '../../assets/iconTop.png';
-
+import ilustracao from '../../assets/topImg.png'
 export function FirstSection() {
+
   return (
-    <div className={styles.InitialInfo}>
-      <div className={styles.TopText}>
-        <img src={iconTop} alt="Robô ícone" />
-        <p>Seja aprovado no Enem e Vestibulares :)</p>
+    <div className="InitialInfo">
+      <div className="TopText">
+        <div className="FirstLine">
+          <img src={iconTop} alt="Robô ícone" />
+          <p>Seja aprovado no Enem e Vestibulares :)</p>
+        </div>
         <h1>Você escolhe o que aprender<span>.</span></h1>
-        <p>Aqui você terá toda assistência que precisa
-          com materiais desenvolvido por <strong>mestres e doutores
+        <p className="PContent">Aqui você terá toda assistência que precisa
+          com materiais desenvolvido por<strong>mestres e doutores
             em matemática</strong></p>
+        <BtnCTAGreen frase="Veja nossos planos" BgColor="3affe5" TextColor="252160" />
       </div>
-      <BtnCTAGreen frase="Veja nossos planos" BgColor="3affe5" TextColor="252160" />
+      <img src={ilustracao} alt="ilustração" />
     </div>
   )
 }

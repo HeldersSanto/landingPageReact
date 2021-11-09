@@ -1,0 +1,38 @@
+.Depoimentos{
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 80px;
+  .DepoimentosCarousel{
+    position: relative;
+  }
+  .rec .rec-carousel{
+    justify-content: center;
+  }
+  button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -40px;
+    border: 0.62px solid #252160;
+    max-width: 31px;
+    min-width: 31px;
+    min-height: 31px;
+    max-height: 31px;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #252160;
+    &:focus{
+      background-color: transparent;
+    }
+  }
+  .rec .rec-arrow-right{
+    margin-left: 31px;
+  }
+  .rec .rec-arrow-left{
+    margin-right: 31px;
+  }
+}

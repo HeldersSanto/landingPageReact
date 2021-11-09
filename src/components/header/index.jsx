@@ -2,6 +2,7 @@ import logo from '../../assets/logoMobile.svg';
 import './styles.scss';
 import { MdClose, MdMenu } from 'react-icons/md';
 import { useState } from 'react';
+import logoDesktop from '../../assets/logoDesktop.svg';
 
 export function Header() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -10,8 +11,11 @@ export function Header() {
     setOpenMenu(!openMenu)
   }
   return (
-    <header className="HeaderWrapper">
-      <a href="http:#"><img src={logo} alt="Logo" /></a>
+    <header className="HeaderWrapper" >
+      <a href="http:#">
+        <img src={logo} alt="Logo" className="LogoMobile" />
+        <img src={logoDesktop} alt="Logo" className="LogoDesktop" />
+      </a>
       <nav>
         <button onClick={toggleMenu} >
           {openMenu != true ?
@@ -27,6 +31,15 @@ export function Header() {
             <li><a href="">Planos</a></li>
             <li><a href="">Fale conosco</a></li>
             <li><a href="">Entrar</a></li>
+          </ul>
+        </div>
+        <div className="MenuDesktop">
+          <ul>
+            <li><a href="" className="Selected">Home</a></li>
+            <li><a href="">Quem somos</a></li>
+            <li><a href="">Planos</a></li>
+            <li><a href="">Fale conosco</a></li>
+            <li><a href="" className="EntrarBtn">Entrar</a></li>
           </ul>
         </div>
       </nav>

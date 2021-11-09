@@ -1,0 +1,54 @@
+.DepoimentoSingle{
+  margin: 30px auto;
+  width: 340px;
+  height: 100%;
+  background: transparent;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.22);
+  border-radius: 9.18919px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  .StarAvaliacao{
+    width: 40%;
+    margin: 10px 0;
+  }
+  .AvaliacaoText{
+    margin: 0 0 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #7B7B7B;
+  }
+  .User{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+      width: 18%;
+      max-width: 55px;
+    }
+    .UserInfo{
+      width: 60%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+        h1{
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 28px;
+          color: #252160;
+          margin: 0
+        }
+        p{
+          margin: 0;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 18px;
+          color: #7B7B7B;
+        }
+    }
+  }
+}

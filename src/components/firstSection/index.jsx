@@ -13,7 +13,7 @@ export function FirstSection() {
         </div>
         <h1>Você escolhe o que aprender<span>.</span></h1>
         <p className="PContent">Aqui você terá toda assistência que precisa
-          com materiais desenvolvido por<strong>mestres e doutores
+          com materiais desenvolvido por <strong>mestres e doutores
             em matemática</strong></p>
         <BtnCTAGreen frase="Veja nossos planos" BgColor="3affe5" TextColor="252160" />
       </div>

@@ -1,7 +1,21 @@
 .SectionPlans{
   margin: 50px auto;
+  padding: 0 50px;
+  text-align: left;
   .PlansWrapper{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
+}
+@media(min-width: 768px){
+  .SectionPlans{
+    padding: 0 2%;
+    .PlansWrapper{
+    flex-wrap: nowrap;
+    gap: 30px;
+    flex-direction: row;
+  }
+  }
+  
 }

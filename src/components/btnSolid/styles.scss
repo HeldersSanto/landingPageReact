@@ -22,3 +22,12 @@
     border-radius: 4px;
   }
 }
+@media(min-width: 768px){
+  .BoxBtnSolid{
+    a{
+      font-size: 17.45px;
+      line-height: 23px;
+      padding:  12px 50px;
+    }
+  }
+}

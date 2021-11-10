@@ -15,29 +15,33 @@ export function PlansBox(props) {
   }
   return (
     <div className="PlansBox" style={BgColor}>
-      <p>{props.duration}</p>
-      <h4 style={Color}>{props.planType}</h4>
-      {props.Star == "True" ?
-        <div className="StarImg">
-          <img src={Star} alt="Preço promocional" />
-          <div>
-            <h2>70%</h2>
-            <p>de desconto</p>
+      <div className="PlanHeader">
+        <p>{props.duration}</p>
+        <h4 style={Color}>{props.planType}</h4>
+        {props.Star == "True" ?
+          <div className="StarImg">
+            <img src={Star} alt="Preço promocional" />
+            <div className="StarText">
+              <h2>70%</h2>
+              <p>de desconto</p>
+            </div>
           </div>
-        </div>
-        : "ola"
-      }
-      <p className="Vantagens">vantagens</p>
-      <ul style={Color}>
-        <li><p><BsCheck size="20px" /></p><p>{props.v1}</p></li>
-        <li><p><BsCheck size="20px" /></p><p>{props.v2}</p></li>
-        <li><p><BsCheck size="20px" /></p><p>{props.v3}</p></li>
-        <li><p><BsCheck size="20px" /></p><p>{props.v4}</p></li>
-        <li><p><BsCheck size="20px" /></p><p>{props.v5}</p></li>
-      </ul>
+          : ""
+        }
+      </div>
+      <div>
+        <p className="Vantagens">vantagens</p>
+        <ul style={Color}>
+          <li><p><BsCheck size="20px" /></p><p>{props.v1}</p></li>
+          <li><p><BsCheck size="20px" /></p><p>{props.v2}</p></li>
+          <li><p><BsCheck size="20px" /></p><p>{props.v3}</p></li>
+          <li><p><BsCheck size="20px" /></p><p>{props.v4}</p></li>
+          <li><p><BsCheck size="20px" /></p><p>{props.v5}</p></li>
+        </ul>
+      </div>
       <div className="BottomBox">
         <div className="Price">
-          <p>de {props.from} por</p>
+          <p>{props.from}</p>
           <h1 style={Color}>
             <span className="RS">R$</span>
             {props.by}
@@ -46,12 +50,12 @@ export function PlansBox(props) {
           <p>{props.info}</p>
         </div>
         {props.BtnBgColor == "gradient" ?
-          <BtnGradient />
+          <BtnGradient className="GradientAlign" />
           :
           <BtnSolid />
         }
       </div>
-    </div>
+    </div >
   )
 }
 PlansBox.defaultProps = {

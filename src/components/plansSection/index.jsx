@@ -20,7 +20,7 @@ export function PlansSection() {
           v4="Grupo no Whatssap com professores e alunos"
           v5="Reforço para FUVEST, Unicamp e Vestibulares de Medicina"
           pagamento="/ano"
-          from="R$178,80"
+          from="de R$178,80 por"
           by="49,90"
           info="Menos de 5 reais por mês"
           BtnBgColor="gradient"

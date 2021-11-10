@@ -3,7 +3,6 @@ import rocketImg from '../../assets/rocketImg.png';
 import guyImg from '../../assets/guy.png';
 import './styles.scss';
 
-
 export function ThirdSection() {
   return (
     <section className="ThirdSection">

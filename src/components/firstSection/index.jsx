@@ -1,5 +1,5 @@
 import { BtnCTAGreen } from '../btnCTA';
-import styles from './styles.scss';
+import './styles.scss';
 import iconTop from '../../assets/iconTop.png';
 import ilustracao from '../../assets/topImg.png'
 export function FirstSection() {

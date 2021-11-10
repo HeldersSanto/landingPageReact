@@ -7,9 +7,9 @@
   justify-content: center;
   align-items: center;
   &>img{
+    width: 60%;
     position:relative;
     display: none;
-    animation: movesGuy 8s linear .7s infinite alternate;
   }
   .TopText{
     .FirstLine{
@@ -52,14 +52,6 @@
     }
   }
 }
-@keyframes movesGuy {
-  to{
-    transform: rotate(8deg);
-  }
-  from{
-    transform: rotate(-8deg);
-  }
-}
 @media(min-width: 768px){
   .InitialInfo{
     
@@ -69,8 +61,8 @@
     padding: 100px 5%;
     &>img{
       display: flex;
-      width: 45%;
-      min-width: 500px;
+      width: 50%;
+      min-width: 400px;
     }
     
   

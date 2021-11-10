@@ -29,3 +29,24 @@
     color: #7B7B7B;
   }
 }
+@media(min-width: 768px){
+  .ThirdSectionText{
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    h1{
+      font-size: 22px;
+      line-height: 30px;
+    }
+    h2{
+      font-size: 44.83px;
+      line-height: 61px;
+      text-align: left;
+    }
+    p{
+      text-align: left;
+      font-size: 20px;
+      line-height: 37px;
+    }
+  }  
+}

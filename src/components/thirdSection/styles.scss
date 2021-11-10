@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   background-color: #f8f8f8;
+  margin: 0 auto;
   .SectionContentAlign{margin-top: 70px;}
   .SectionContent{
     position: relative;
@@ -11,22 +12,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
     img{
       position: relative;
       top: 0;
       margin: 25px auto;
-      max-width: 450px;
-      width: 100%;
-      animation: moveAnimate 3s linear infinite alternate;
+      max-width: 400px;
+      width: 49%;
     }
   }
 }
 
-@keyframes moveAnimate {
-  from{
-    top: -10px;
+@media(min-width: 768px){
+  .ThirdSection{
+    margin: 0 auto;
+    width: 100%;
+    .SectionContent{
+    flex-direction: row;
+    }
+    .SectionContentAlign{
+      flex-direction: row-reverse;
+    }
   }
-  to{
-    top: 10px;
-  }
+
 }

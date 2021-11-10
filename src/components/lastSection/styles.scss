@@ -1,3 +1,76 @@
 .LastSection{
-  margin-bottom: 40px;
+  margin: 70px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background: #252160;
+  align-items: center;
+  justify-content: center;
+  .AppInfo{
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 70px  0;
+    .RobotLine{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      p{
+        width: 100%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        color: #3AFFE5;
+      }
+      img{
+        width: 50px;
+      }
+    }
+    .AppDescription{
+      width: 90%;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.38px;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+    }
+  }
+}
+@media(min-width: 768px){
+.LastSection{
+flex-direction: row-reverse;
+padding: 0 5%;
+max-height: 500px;
+.AppInfo{
+  max-width: 500px;
+.RobotLine{
+  width: 90%;
+  max-width: 500px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  p{
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+.AppDescription{
+  font-size: 19.45px;
+line-height: 29px;
+letter-spacing: 0.38px;
+}
+}
+img{
+  width: 380px;
+  position: relative;
+  bottom: 14px;
+}
+}
 }

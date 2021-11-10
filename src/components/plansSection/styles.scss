@@ -1,6 +1,10 @@
 .SectionPlans{
   margin: 50px auto;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .PlansWrapper{
     display: flex;
     flex-direction: column;
